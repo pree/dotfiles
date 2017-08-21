@@ -4,3 +4,4 @@
   ~/.config/termite: gui/termite
   ~/.config/dunst: gui/dunst
   ~/.config/gtk-3.0: gui/gtk-3.0
+  ~/.gtkrc-2.0: gui/misc/.gtkrc-2.0
