@@ -1,3 +1,6 @@
 [submodule "install/dotbot"]
 	path = install/dotbot
 	url = git://github.com/anishathalye/dotbot
+[submodule "install/dotbot-yaourt"]
+	path = install/dotbot-yaourt
+	url = git://github.com/niklas-heer/dotbot-yaourt

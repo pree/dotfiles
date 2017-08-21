@@ -11,10 +11,11 @@ from subprocess import call
 # User Configurations
 NON_TOPICS = ['bin']
 TOPIC_PRIORITY = ['install']
+DEFAULT_CONFIG = 'workstation.arch'
 
 # Dotbot Configurations
 DOTBOT = 'install/dotbot/bin/dotbot'
-PLUGINS = []
+PLUGINS = [ '-p install/dotbot-yaourt/yaourt.py' ]
 
 # Path Processing
 BASE_DIR = path.dirname(path.realpath(__file__))
@@ -24,7 +25,7 @@ DOTBOT = path.join(BASE_DIR, DOTBOT)
 def main():
     """Main logic."""
     parser = ArgumentParser()
-    parser.add_argument('profile', type=str, default='config.macos')
+    parser.add_argument('profile', type=str, default=DEFAULT_CONFIG)
     args = parser.parse_args()
 
     configs = collect(args.profile)
