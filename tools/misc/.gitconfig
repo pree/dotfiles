@@ -1,0 +1,7 @@
+[user]
+  name = Pascal Reeb
+  email = pascal@reeb.io
+  signingKey = 803A86FA
+
+[commit]
+  gpgsign = true
