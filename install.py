@@ -15,7 +15,7 @@ DEFAULT_CONFIG = 'workstation.arch'
 
 # Dotbot Configurations
 DOTBOT = 'install/dotbot/bin/dotbot'
-PLUGINS = [ '-p install/dotbot-yaourt/yaourt.py' ]
+PLUGINS = ['-p', 'install/dotbot-yaourt/yaourt.py']
 
 # Path Processing
 BASE_DIR = path.dirname(path.realpath(__file__))
