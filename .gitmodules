@@ -1,9 +1,9 @@
 [submodule "install/dotbot"]
 	path = install/dotbot
-	url = git://github.com/anishathalye/dotbot
+	url = git://github.com/anishathalye/dotbot.git
 [submodule "install/dotbot-yaourt"]
 	path = install/dotbot-yaourt
-	url = git://github.com/niklas-heer/dotbot-yaourt
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh
+	url = git://github.com/niklas-heer/dotbot-yaourt.git
+[submodule "private"]
+	path = private
+	url = https://git.reeb.io/pree/dotfiles-private.git
