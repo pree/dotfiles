@@ -1,0 +1,12 @@
+rofi.modi: drun,run,ssh,window
+rofi.font: 'Hack' 14, FontAwesome 14
+rofi.color-normal: argb:d2424655, argb:d2838c9d, argb:d2424655, argb:d2424655, argb:d2f3f4f5
+rofi.color-window: argb:d2424655, argb:d2424655, argb:d2525863
+
+rofi.separator-style: solid
+rofi.scroll-method: 1
+
+rofi.window-format: {w} 	{t}
+
+rofi.ssh-command: {terminal} -e '{ssh-client} {host}'
+rofi.parse-known-hosts: false
