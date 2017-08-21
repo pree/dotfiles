@@ -2,3 +2,4 @@
   ~/.config/i3: gui/i3
   ~/.config/i3blocks: gui/i3blocks
   ~/.config/termite: gui/termite
+  ~/.config/dunst: gui/dunst
