@@ -4,3 +4,6 @@
 [submodule "install/dotbot-yaourt"]
 	path = install/dotbot-yaourt
 	url = git://github.com/niklas-heer/dotbot-yaourt
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh
