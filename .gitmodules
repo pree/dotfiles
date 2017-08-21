@@ -7,6 +7,6 @@
 [submodule "private"]
 	path = private
 	url = git@git.reeb.io:pree/dotfiles-private.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
+[submodule "install/oh-my-zsh"]
+	path = install/oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
