@@ -7,3 +7,5 @@
   ~/.gtkrc-2.0: gui/misc/.gtkrc-2.0
   ~/.Xresources: gui/misc/.Xresources
   ~/.config/rofi: gui/rofi
+  ~/.fehbg: gui/misc/.fehbg
+  ~/.config/wallpaper: gui/wallpaper
