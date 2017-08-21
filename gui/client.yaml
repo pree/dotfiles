@@ -3,3 +3,4 @@
   ~/.config/i3blocks: gui/i3blocks
   ~/.config/termite: gui/termite
   ~/.config/dunst: gui/dunst
+  ~/.config/gtk-3.0: gui/gtk-3.0
