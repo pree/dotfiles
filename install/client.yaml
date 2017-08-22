@@ -1,4 +1,4 @@
 - defaults:
-  link:
-    create: true
-    relink: true
+    link:
+        create: true
+        relink: true

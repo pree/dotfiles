@@ -1,2 +1,2 @@
 - link:
-  ~/.gitconfig: tools/misc/.gitconfig
+    ~/.gitconfig: tools/misc/.gitconfig
