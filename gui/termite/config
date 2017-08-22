@@ -120,12 +120,12 @@ color1  = #ff005b
 color9  = #ff00a0
 
 # green
-color2  = #cee318
-color10 = #ccff00
+color2  = #61bc3b
+color10 = #86df5d
 
 # yellow
-color3  = #ffe755
-color11 = #ff9f00
+color3  = #f3b43a
+color11 = #fdd75a
 
 # blue
 color4  = #048ac7

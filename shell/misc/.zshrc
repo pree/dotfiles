@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export EDITOR='vim'
+export TERMINAL='termite'
 export GPG_TTY=$(tty)
 export LC_ALL=en_US.UTF-8
 

@@ -1,0 +1,72 @@
+# install/client.yaml
+- defaults:
+    link:
+        create: true
+        relink: true
+
+# install/client.arch.yaml
+- shell:
+  - [ sudo pacman -Sy, Update pacman ]
+
+# gui/client.yaml
+- link:
+    ~/.config/i3: gui/i3
+    ~/.config/i3blocks: gui/i3blocks
+    ~/.config/termite: gui/termite
+    ~/.config/dunst: gui/dunst
+    ~/.config/gtk-3.0: gui/gtk-3.0
+    ~/.gtkrc-2.0: gui/misc/.gtkrc-2.0
+    ~/.Xresources: gui/misc/.Xresources
+    ~/.xinitrc: gui/misc/.xinitrc
+    ~/.config/rofi: gui/rofi
+    ~/.fehbg: gui/misc/.fehbg
+    ~/.config/wallpaper: gui/wallpaper
+
+- shell:
+  - [ chmod +x ~/.fehbg, Making .fehbg executable ]
+  - [ sudo localectl --no-convert set-x11-keymap de pc105 nodeadkeys, Setting Keymap]
+
+# gui/client.arch.yaml
+- yaourt:
+    - xorg-server
+    - xorg-xinit
+    - xorg-xrandr
+    - ttf-font-awesome
+    - thunar
+    - i3-gaps-git
+    - i3blocks-gaps-git
+    - i3lock
+    - termite
+    - dunst
+    - rofi
+    - feh
+    - chromium
+    - compton
+
+# shell/client.yaml
+- link:
+    ~/.oh-my-zsh: install/oh-my-zsh
+    ~/.zshrc: shell/misc/.zshrc
+
+- shell:
+  -
+      command: chsh -s /usr/bin/zsh
+      stdin: true
+      stdout: true
+      description: Changing Shell
+
+# shell/client.arch.yaml
+- yaourt:
+    - powerline-fonts-git
+    - archey3
+    - zsh
+
+# tools/client.yaml
+- link:
+    ~/.gitconfig: tools/misc/.gitconfig
+
+# tools/client.arch.yaml
+- yaourt:
+    - chromium
+    - gnupg
+
