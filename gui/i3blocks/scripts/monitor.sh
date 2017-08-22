@@ -14,15 +14,17 @@ while read line; do
             [[ -z "${BLOCK_BUTTON}" ]] || {
                 xrandr --output "${output}" --off
                 pkill -RTMIN+4 i3blocks
+		exit 0
             }
+	    exit 33
         else
             [[ -z "${BLOCK_BUTTON}" ]] || {
                 xrandr --auto
                 xrandr --output "${output}" --right-of eDP1
+		$HOME/.fehbg
                 pkill -RTMIN+4 i3blocks
+		exit 33
             }
-
-            exit 33
         fi
 
         exit 0
@@ -33,6 +35,7 @@ while read line; do
             [[ -z "${BLOCK_BUTTON}" ]] || {
                 xrandr --output "${output}" --off
                 pkill -RTMIN+4 i3blocks
+		exit 0
             }
 
             exit 33
