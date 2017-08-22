@@ -3,4 +3,8 @@
     ~/.zshrc: shell/misc/.zshrc
 
 - shell:
-  - [ chsh -s /usr/bin/zsh, Changing Shell ]
+  -
+      command: chsh -s /usr/bin/zsh
+      stdin: true
+      stdout: true
+      description: Changing Shell
