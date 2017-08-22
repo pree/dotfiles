@@ -3,7 +3,6 @@
     - xorg-xinit
     - xorg-xrandr
     - ttf-font-awesome
-    - ttf-hack
     - thunar
     - i3-gaps-git
     - i3blocks-gaps-git
