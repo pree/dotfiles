@@ -1,3 +1,6 @@
 - link:
     ~/.oh-my-zsh: install/oh-my-zsh
     ~/.zshrc: shell/misc/.zshrc
+
+- shell:
+  - [ chsh -s /usr/bin/zsh, Changing Shell ]
