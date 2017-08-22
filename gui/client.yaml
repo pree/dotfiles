@@ -10,3 +10,6 @@
     ~/.config/rofi: gui/rofi
     ~/.fehbg: gui/misc/.fehbg
     ~/.config/wallpaper: gui/wallpaper
+
+- shell:
+  - [ chmod +x ~/.fehbg ]
