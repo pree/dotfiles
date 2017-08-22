@@ -126,8 +126,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3blocks/scripts
 bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3blocks/scripts/volume_control.py up 5
 bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3blocks/scripts/volume_control.py toggle
 
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 && pkill -RTMIN+2 i3blocks
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 && pkill -RTMIN+2 i3blocks
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
