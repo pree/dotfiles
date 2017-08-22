@@ -12,4 +12,5 @@
     ~/.config/wallpaper: gui/wallpaper
 
 - shell:
-  - [ chmod +x ~/.fehbg ]
+  - [ chmod +x ~/.fehbg, Making .fehbg executable ]
+  - [ sudo localectl --no-convert set-x11-keymap de pc105 nodeadkeys, Setting Keymap]
