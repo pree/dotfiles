@@ -157,8 +157,8 @@ set $mode_system System:    L :  | S :  | R :  | E : 
 mode "$mode_system" {
 	bindsym l exec --no-startup-id i3lock, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
-	bindsym s exec --no-startup-id sudo systemctl poweroff, mode "default"
-	bindsym r exec --no-startup-id sudo systemctl reboot, mode "default"
+	bindsym s exec --no-startup-id systemctl poweroff, mode "default"
+	bindsym r exec --no-startup-id systemctl reboot, mode "default"
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
