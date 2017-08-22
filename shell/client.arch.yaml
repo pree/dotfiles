@@ -1,3 +1,4 @@
 - yaourt:
     - powerline-fonts-git
     - archey3
+    - zsh
