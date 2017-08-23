@@ -10,6 +10,12 @@ command=$HOME/.config/i3blocks/scripts/monitor.sh
 interval=10
 signal=4
 
+[spotify]
+label=  
+command=$HOME/.config/i3blocks/scripts/spotify.py
+border=#81b71a
+interval=5
+
 [volume]
 label=    
 command=[[ -z "${BLOCK_BUTTON}" ]] || ( [[ "${BLOCK_BUTTON}" == "1" ]] && ((/usr/bin/pavucontrol -t 3 --name "pavucontrol-bar" || true) && pkill -RTMIN+1 i3blocks) || $HOME/.config/i3blocks/scripts/volume_control.py toggle ); $HOME/.config/i3blocks/scripts/volume_control.py i3blocks
