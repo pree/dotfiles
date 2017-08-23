@@ -155,7 +155,7 @@ bindsym $mod+r mode "resize"
 
 set $mode_system System:    L :  | S :  | R :  | E : 
 mode "$mode_system" {
-	bindsym l exec --no-startup-id i3lock, mode "default"
+	bindsym l exec --no-startup-id $HOME/.config/i3/scripts/i3lock.sh, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
 	bindsym s exec --no-startup-id systemctl poweroff, mode "default"
 	bindsym r exec --no-startup-id systemctl reboot, mode "default"
