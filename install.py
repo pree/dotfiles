@@ -11,7 +11,7 @@ from subprocess import call
 # User Configurations
 NON_TOPICS = ['bin']
 TOPIC_PRIORITY = ['install']
-DEFAULT_CONFIG = 'workstation.arch'
+DEFAULT_CONFIG = 'client.arch'
 
 # Dotbot Configurations
 DOTBOT = 'install/dotbot/bin/dotbot'
