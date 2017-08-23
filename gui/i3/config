@@ -129,6 +129,10 @@ bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3blocks/scripts/volume
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 && pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 && pkill -RTMIN+2 i3blocks
 
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next && pkill -RTMIN+3 i3blocks
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous && pkill -RTMIN+3 i3blocks
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -199,8 +203,9 @@ for_window [window_type="menu"] floating enable
 for_window [instance="pavucontrol"] floating enable
 for_window [instance="pinentry"] floating enable
 
-assign [window_role="browser"] $ws1
+assign [class="Chromium"] $ws1
 for_window [class="Spotify"] move to workspace $ws10
+assign [class="Atom"] $ws3
 
 exec --no-startup-id compton -b
 exec --no-startup-id ~/.fehbg
