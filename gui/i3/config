@@ -216,6 +216,7 @@ for_window [instance="pinentry"] floating enable
 
 # assign [window_role="browser"] $ws1
 for_window [class="Spotify"] move to workspace $ws10
+assign [class="Atom"] $ws3
 
 exec --no-startup-id compton -b
 exec --no-startup-id ~/.fehbg

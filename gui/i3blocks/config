@@ -13,6 +13,7 @@ signal=4
 [spotify]
 label= 
 command=$HOME/.config/i3blocks/scripts/spotify.py
+signal=3
 border=#81b71a
 interval=5
 
