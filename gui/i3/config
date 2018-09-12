@@ -8,7 +8,7 @@ font pango:Hack, FontAwesome 12
 floating_modifier $mod
 
 # Workspaces
-set $ws1 "1:  "
+set $ws1 "1:  "
 set $ws2 "2:  "
 set $ws3 "3:  "
 set $ws4 "4"
@@ -121,6 +121,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+# move focused workspace
+bindsym $mod+Ctrl+Left move workspace to output left
+bindsym $mod+Ctrl+Down move workspace to output down
+bindsym $mod+Ctrl+Up move workspace to output up
+bindsym $mod+Ctrl+Right move workspace to output right
+
 # Media Keys
 bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3blocks/scripts/volume_control.py down 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3blocks/scripts/volume_control.py up 5
@@ -128,6 +134,15 @@ bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3blocks/scripts/volume
 
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 && pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 && pkill -RTMIN+2 i3blocks
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next && pkill -RTMIN+3 i3blocks
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous && pkill -RTMIN+3 i3blocks
+
+# Screenshot
+bindsym mod1+Shift+2 exec flameshot gui
+bindsym Print exec flameshot gui
+bindsym Shift+Print exec flameshot full -c
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -153,7 +168,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-set $mode_system System:    L :  | S :  | R :  | E : 
+set $mode_system System:    L :  | S :  | R :  | E : 
 mode "$mode_system" {
 	bindsym l exec --no-startup-id $HOME/.config/i3/scripts/i3lock.sh, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
@@ -199,8 +214,10 @@ for_window [window_type="menu"] floating enable
 for_window [instance="pavucontrol"] floating enable
 for_window [instance="pinentry"] floating enable
 
-assign [window_role="browser"] $ws1
+# assign [window_role="browser"] $ws1
 for_window [class="Spotify"] move to workspace $ws10
 
 exec --no-startup-id compton -b
 exec --no-startup-id ~/.fehbg
+exec --no-startup-id redshift-gtk
+exec --no-startup-id flameshot

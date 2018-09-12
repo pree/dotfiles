@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 export TERMINAL='termite'
+export TERM=xterm
 export GPG_TTY=$(tty)
 export LC_ALL=en_US.UTF-8
 
